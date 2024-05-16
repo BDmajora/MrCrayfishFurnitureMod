@@ -52,7 +52,7 @@ public class Recipes {
         ArrayList<RecipeData> recipes = Recipes.getRecipes("oven");
         for (int i = 0; i < recipes.size(); ++i) {
             ItemStack validItemStack = recipes.get(i).getInput();
-            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getMetadata() != itemStack.getMetadata()) continue;
+            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getItemDamage() != itemStack.getItemDamage()) continue;
             return recipes.get(i);
         }
         return null;
@@ -62,7 +62,7 @@ public class Recipes {
         ArrayList<RecipeData> recipes = Recipes.getRecipes("freezer");
         for (int i = 0; i < recipes.size(); ++i) {
             ItemStack validItemStack = recipes.get(i).getInput();
-            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getMetadata() != itemStack.getMetadata()) continue;
+            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getItemDamage() != itemStack.getItemDamage()) continue;
             return recipes.get(i);
         }
         return null;
@@ -72,7 +72,7 @@ public class Recipes {
         ArrayList<RecipeData> recipes = Recipes.getRecipes("printer");
         for (int i = 0; i < recipes.size(); ++i) {
             ItemStack validItemStack = recipes.get(i).getInput();
-            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getMetadata() != itemStack.getMetadata() || itemStack.stackSize != 1) continue;
+            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getItemDamage() != itemStack.getItemDamage() || itemStack.stackSize != 1) continue;
             return recipes.get(i);
         }
         return null;
@@ -82,7 +82,7 @@ public class Recipes {
         ArrayList<RecipeData> recipes = Recipes.getRecipes("toaster");
         for (int i = 0; i < recipes.size(); ++i) {
             ItemStack validItemStack = recipes.get(i).getInput();
-            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getMetadata() != itemStack.getMetadata()) continue;
+            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getItemDamage() != itemStack.getItemDamage()) continue;
             return recipes.get(i);
         }
         return null;
@@ -92,7 +92,7 @@ public class Recipes {
         ArrayList<RecipeData> recipes = Recipes.getRecipes("choppingboard");
         for (int i = 0; i < recipes.size(); ++i) {
             ItemStack validItemStack = recipes.get(i).getInput();
-            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getMetadata() != itemStack.getMetadata()) continue;
+            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getItemDamage() != itemStack.getItemDamage()) continue;
             return recipes.get(i);
         }
         return null;
@@ -106,7 +106,7 @@ public class Recipes {
             for (ItemStack item : itemStack) {
                 if (item == null) continue;
                 for (ItemStack ingredient : ingredients) {
-                    if (ingredient.getItem() == item.getItem() && ingredient.stackSize == item.stackSize && ingredient.getMetadata() == item.getMetadata()) {
+                    if (ingredient.getItem() == item.getItem() && ingredient.stackSize == item.stackSize && ingredient.getItemDamage() == item.getItemDamage()) {
                         ++count;
                     }
                     if (count != ingredients.size()) continue;
@@ -121,7 +121,7 @@ public class Recipes {
         ArrayList<RecipeData> recipes = Recipes.getRecipes("microwave");
         for (int i = 0; i < recipes.size(); ++i) {
             ItemStack validItemStack = recipes.get(i).getInput();
-            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getMetadata() != itemStack.getMetadata()) continue;
+            if (validItemStack.getItem() != itemStack.getItem() || validItemStack.getItemDamage() != itemStack.getItemDamage()) continue;
             return recipes.get(i);
         }
         return null;

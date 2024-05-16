@@ -716,10 +716,10 @@ extends RecipeAPI {
             RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.chicken), new ItemStack(Items.cooked_chicken));
         }
         if (ConfigurationHandler.oven_5) {
-            RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.fish, 1, 0), new ItemStack(Items.cooked_fish, 1, 0));
+            RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.fish, 1, 0), new ItemStack(Items.cooked_fished, 1, 0));
         }
         if (ConfigurationHandler.oven_6) {
-            RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.fish, 1, 1), new ItemStack(Items.cooked_fish, 1, 1));
+            RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(Items.fish, 1, 1), new ItemStack(Items.cooked_fished, 1, 1));
         }
         if (ConfigurationHandler.oven_7) {
             RecipeRegistry.getInstance().registerOvenRecipe(new ItemStack(MrCrayfishFurnitureMod.itemFlesh), new ItemStack(MrCrayfishFurnitureMod.itemCookedFlesh));

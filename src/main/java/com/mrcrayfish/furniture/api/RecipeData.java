@@ -116,15 +116,15 @@ public class RecipeData {
         String result = "";
         if (this.input != null) {
             name = GameRegistry.findUniqueIdentifierFor((Item)this.input.getItem()).toString();
-            result = result + "input-item=" + name + ",input-amount=" + this.input.stackSize + ",input-metadata=" + this.input.getMetadata() + ",";
+            result = result + "input-item=" + name + ",input-amount=" + this.input.stackSize + ",input-metadata=" + this.input.getItemDamage() + ",";
         }
         if (this.output != null) {
             name = GameRegistry.findUniqueIdentifierFor((Item)this.output.getItem()).toString();
-            result = result + "output-item=" + name + ",output-amount=" + this.output.stackSize + ",output-metadata=" + this.output.getMetadata() + ",";
+            result = result + "output-item=" + name + ",output-amount=" + this.output.stackSize + ",output-metadata=" + this.output.getItemDamage() + ",";
         }
         if (this.currency != null) {
             name = GameRegistry.findUniqueIdentifierFor((Item)this.currency.getItem()).toString();
-            result = result + "payment-item=" + name + ",output-item-metadata=" + this.currency.getMetadata() + ",";
+            result = result + "payment-item=" + name + ",output-item-metadata=" + this.currency.getItemDamage() + ",";
             result = result + "payment-price=" + this.price + ",";
         }
         if (this.name != null) {
@@ -140,7 +140,7 @@ public class RecipeData {
                 pre = pre + ":";
                 pre = pre + this.ingredients.get((int)i).stackSize;
                 pre = pre + ":";
-                pre = pre + this.ingredients.get(i).getMetadata();
+                pre = pre + this.ingredients.get(i).getItemDamage();
                 if (i == this.ingredients.size() - 1) continue;
                 pre = pre + "/";
             }
@@ -173,7 +173,7 @@ public class RecipeData {
         }
         if (params.containsKey("ingredients") && (ingredients = params.get("ingredients")) instanceof ItemStack[]) {
             for (ItemStack ingredient : (ItemStack[])ingredients) {
-                data.addIngredient(new ItemStack(ingredient.getItem(), ingredient.stackSize, ingredient.getMetadata()));
+                data.addIngredient(new ItemStack(ingredient.getItem(), ingredient.stackSize, ingredient.getItemDamage()));
             }
         }
         if (params.containsKey("colour") && (colour = params.get("colour")) instanceof int[]) {
