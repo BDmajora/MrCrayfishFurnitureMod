@@ -35,7 +35,7 @@ extends TileEntitySpecialRenderer {
 
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float f) {
         TileEntityChoppingBoard board = (TileEntityChoppingBoard)tileEntity;
-        int metadata = tileEntity.getWorld().getBlockMetadata(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord);
+        int metadata = tileEntity.getWorldObj().getBlockMetadata(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord);
         if (board.getFood() != null) {
             this.entityFood.setEntityItemStack(board.getFood());
             GL11.glPushMatrix();

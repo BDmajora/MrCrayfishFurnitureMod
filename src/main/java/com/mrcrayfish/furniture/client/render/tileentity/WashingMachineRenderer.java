@@ -35,7 +35,7 @@ extends TileEntitySpecialRenderer {
 
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float p_147500_8_) {
         TileEntityWashingMachine tileEntityWashingMachine = (TileEntityWashingMachine)tileEntity;
-        int metadata = tileEntity.getWorld().getBlockMetadata(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord);
+        int metadata = tileEntity.getWorldObj().getBlockMetadata(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord);
         GL11.glPushMatrix();
         GL11.glTranslatef((float)((float)x + 0.5f), (float)((float)y + 0.5f), (float)((float)z + 0.5f));
         GL11.glRotatef((float)((float)metadata * -90.0f), (float)0.0f, (float)1.0f, (float)0.0f);

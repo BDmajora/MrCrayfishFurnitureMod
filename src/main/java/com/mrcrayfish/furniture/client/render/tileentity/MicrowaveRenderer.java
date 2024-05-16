@@ -35,7 +35,7 @@ extends TileEntitySpecialRenderer {
 
     public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float f) {
         TileEntityMicrowave microwave = (TileEntityMicrowave)tileEntity;
-        int metadata = tileEntity.getWorld().getBlockMetadata(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord);
+        int metadata = tileEntity.getWorldObj().getBlockMetadata(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord);
         if (microwave.getItem() != null) {
             this.entityFood.setEntityItemStack(microwave.getItem());
             GL11.glPushMatrix();

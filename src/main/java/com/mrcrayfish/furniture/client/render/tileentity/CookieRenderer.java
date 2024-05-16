@@ -44,7 +44,7 @@ extends TileEntitySpecialRenderer {
         GL11.glTranslatef((float)((float)x + 0.5f), (float)((float)y + 0.05f), (float)((float)z + 0.3f));
         GL11.glRotatef((float)180.0f, (float)0.0f, (float)1.0f, (float)1.0f);
         GL11.glScalef((float)0.9f, (float)0.9f, (float)0.9f);
-        int metadata = tileEntity.getWorld().getBlockMetadata(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord);
+        int metadata = tileEntity.getWorldObj().getBlockMetadata(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord);
         for (int i = 0; i < metadata; ++i) {
             RenderManager.instance.renderEntityWithPosYaw((Entity)this.entityItem, 0.0, 0.0, 0.1 * (double)i, 0.0f, 0.0f);
         }
