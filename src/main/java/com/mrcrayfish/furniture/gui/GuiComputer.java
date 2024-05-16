@@ -92,7 +92,7 @@ extends GuiContainer {
             this.buySlot = this.tileEntityComputer.getStackInSlot(0);
             if (this.buySlot != null) {
                 ItemStack money = this.itemdata[this.itemNum].getCurrency();
-                if (this.buySlot.getItem() == money.getItem() && this.buySlot.getMetadata() == money.getMetadata()) {
+                if (this.buySlot.getItem() == money.getItem() && this.buySlot.getItemDamage() == money.getItemDamage()) {
                     int price = this.itemdata[this.itemNum].getPrice();
                     if (this.buySlot.stackSize == price) {
                         PacketHandler.INSTANCE.sendToServer((IMessage)new MessageMineBayBuy(this.itemNum, this.tileEntityComputer.xCoord, this.tileEntityComputer.yCoord, this.tileEntityComputer.zCoord, true));
@@ -154,6 +154,10 @@ extends GuiContainer {
         if (this.isPointInRegion(80, 16, 16, 16, par1, par2)) {
             this.renderToolTip(stock, par1, par2);
         }
+    }
+
+    private boolean isPointInRegion(int i, int i1, int i2, int i3, int par1, int par2) {
+        return false;
     }
 
     protected void drawGuiContainerBackgroundLayer(float f, int i, int j) {

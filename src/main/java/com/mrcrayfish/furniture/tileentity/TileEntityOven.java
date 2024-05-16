@@ -200,7 +200,7 @@ implements ISidedInventory {
             }
             if (this.ovenItemStacks[itemNum + 9] == null) {
                 this.ovenItemStacks[itemNum + 9] = data.getOutput().copy();
-            } else if (this.ovenItemStacks[itemNum + 9].getItem() == data.getOutput().getItem() && this.ovenItemStacks[itemNum + 9].getMetadata() == data.getOutput().getMetadata()) {
+            } else if (this.ovenItemStacks[itemNum + 9].getItem() == data.getOutput().getItem() && this.ovenItemStacks[itemNum + 9].getItemDamage() == data.getOutput().getItemDamage()) {
                 this.ovenItemStacks[itemNum + 9].stackSize += data.getOutput().copy().stackSize;
             }
             if (this.ovenItemStacks[itemNum].getItem().hasContainerItem()) {

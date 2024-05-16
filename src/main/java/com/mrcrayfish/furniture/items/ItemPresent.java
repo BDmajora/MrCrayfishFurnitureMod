@@ -49,7 +49,7 @@ implements IMail {
             NBTTagCompound nbttagcompound = par1ItemStack.getTagCompound();
             NBTTagString nbttagstring = (NBTTagString)nbttagcompound.getTag("Author");
             if (nbttagstring != null) {
-                par3List.add(EnumChatFormatting.GRAY + "from " + nbttagstring.getString());
+                par3List.add(EnumChatFormatting.GRAY + "from " + nbttagstring.toString());
             } else {
                 par3List.add(EnumChatFormatting.GRAY + "Unsigned");
             }

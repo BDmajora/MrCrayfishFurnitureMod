@@ -78,7 +78,7 @@ extends Item {
                         var12.onBlockPlacedBy(par3World, par4, par5, par6, (EntityLivingBase)par2EntityPlayer, par1ItemStack);
                         var12.onPostBlockPlaced(par3World, par4, par5, par6, this.metadata2);
                     }
-                    par3World.playSoundEffect((double)((float)par4 + 0.5f), (double)((float)par5 + 0.5f), (double)((float)par6 + 0.5f), var12.stepSound.getPlaceSound(), (var12.stepSound.getVolume() + 1.0f) / 2.0f, var12.stepSound.getFrequency() * 0.8f);
+                    par3World.playSoundEffect((double)((float)par4 + 0.5f), (double)((float)par5 + 0.5f), (double)((float)par6 + 0.5f), var12.stepSound.getBreakSound(), (var12.stepSound.getVolume() + 1.0f) / 2.0f, var12.stepSound.getPitch() * 0.8f);
                     --par1ItemStack.stackSize;
                 }
             } else if (par3World.setBlock(par4, par5, par6, var12, this.metadata, 3)) {
@@ -86,7 +86,7 @@ extends Item {
                     var12.onBlockPlacedBy(par3World, par4, par5, par6, (EntityLivingBase)par2EntityPlayer, par1ItemStack);
                     var12.onPostBlockPlaced(par3World, par4, par5, par6, this.metadata);
                 }
-                par3World.playSoundEffect((double)((float)par4 + 0.5f), (double)((float)par5 + 0.5f), (double)((float)par6 + 0.5f), var12.stepSound.getPlaceSound(), (var12.stepSound.getVolume() + 1.0f) / 2.0f, var12.stepSound.getFrequency() * 0.8f);
+                par3World.playSoundEffect((double)((float)par4 + 0.5f), (double)((float)par5 + 0.5f), (double)((float)par6 + 0.5f), var12.stepSound.getBreakSound(), (var12.stepSound.getVolume() + 1.0f) / 2.0f, var12.stepSound.getPitch() * 0.8f);
                 --par1ItemStack.stackSize;
             }
         }

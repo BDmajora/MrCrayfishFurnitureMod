@@ -50,7 +50,7 @@ extends Container {
     }
 
     public void onCraftGuiOpened(ICrafting par1ICrafting) {
-        super.onCraftGuiOpened(par1ICrafting);
+        super.onCraftMatrixChanged((IInventory) par1ICrafting);
         par1ICrafting.sendProgressBarUpdate((Container)this, 0, this.freezer.printerPrintTime);
         par1ICrafting.sendProgressBarUpdate((Container)this, 1, this.freezer.printerPrintingTime);
         par1ICrafting.sendProgressBarUpdate((Container)this, 2, this.freezer.currentItemPrintTime);

@@ -208,7 +208,7 @@ implements ISidedInventory {
     }
 
     public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt) {
-        NBTTagCompound tagCom = pkt.getNbtCompound();
+        NBTTagCompound tagCom = pkt.func_148857_g();
         this.readFromNBT(tagCom);
     }
 

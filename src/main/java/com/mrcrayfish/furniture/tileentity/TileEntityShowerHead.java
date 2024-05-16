@@ -45,7 +45,7 @@ extends TileEntity {
                 ItemArmor armour;
                 ItemStack itemstack = player.getCurrentArmor(i);
                 if (itemstack == null || !(itemstack.getItem() instanceof ItemArmor) || (armour = (ItemArmor)itemstack.getItem()).getArmorMaterial() != ItemArmor.ArmorMaterial.CLOTH) continue;
-                player.setCurrentItemOrArmor(i + 1, new ItemStack(itemstack.getItem(), 1, itemstack.getMetadata()));
+                player.setCurrentItemOrArmor(i + 1, new ItemStack(itemstack.getItem(), 1, itemstack.getItemDamage()));
             }
             if (!player.isBurning()) continue;
             player.extinguish();

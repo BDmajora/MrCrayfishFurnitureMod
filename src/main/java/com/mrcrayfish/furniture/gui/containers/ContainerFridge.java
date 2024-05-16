@@ -27,7 +27,7 @@ extends Container {
     public ContainerFridge(IInventory par1IInventory, IInventory par2IInventory) {
         int var4;
         this.lowerChestInventory = par2IInventory;
-        par2IInventory.openChest();
+        par2IInventory.openInventory();
         int count = 0;
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 5; ++j) {
@@ -72,7 +72,7 @@ extends Container {
 
     public void onContainerClosed(EntityPlayer par1EntityPlayer) {
         super.onContainerClosed(par1EntityPlayer);
-        this.lowerChestInventory.closeChest();
+        this.lowerChestInventory.closeInventory();
     }
 
     public IInventory getLowerChestInventory() {

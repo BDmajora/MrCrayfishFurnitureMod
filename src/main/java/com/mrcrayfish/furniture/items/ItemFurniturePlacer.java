@@ -71,7 +71,7 @@ extends Item {
                     this.spawnBlock.onBlockPlacedBy(par3World, par4, par5, par6, (EntityLivingBase)par2EntityPlayer, par1ItemStack);
                     this.spawnBlock.onPostBlockPlaced(par3World, par4, par5, par6, metadata);
                 }
-                par3World.playSoundEffect((double)((float)par4 + 0.5f), (double)((float)par5 + 0.5f), (double)((float)par6 + 0.5f), this.spawnBlock.stepSound.getPlaceSound(), (this.spawnBlock.stepSound.getVolume() + 1.0f) / 2.0f, this.spawnBlock.stepSound.getFrequency() * 0.8f);
+                par3World.playSoundEffect((double)((float)par4 + 0.5f), (double)((float)par5 + 0.5f), (double)((float)par6 + 0.5f), this.spawnBlock.stepSound.getBreakSound(), (this.spawnBlock.stepSound.getVolume() + 1.0f) / 2.0f, this.spawnBlock.stepSound.getPitch() * 0.8f);
                 --par1ItemStack.stackSize;
             }
         }

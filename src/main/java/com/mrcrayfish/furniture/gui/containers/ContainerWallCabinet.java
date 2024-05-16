@@ -27,7 +27,7 @@ extends Container {
         int j;
         int i;
         this.wallCabinetInventory = wallCabinetInventory;
-        wallCabinetInventory.openChest();
+        wallCabinetInventory.openInventory();
         int count = 0;
         for (i = 0; i < 3; ++i) {
             for (j = 0; j < 3; ++j) {
@@ -72,7 +72,7 @@ extends Container {
 
     public void onContainerClosed(EntityPlayer par1EntityPlayer) {
         super.onContainerClosed(par1EntityPlayer);
-        this.wallCabinetInventory.closeChest();
+        this.wallCabinetInventory.closeInventory();
     }
 }
 

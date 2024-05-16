@@ -20,7 +20,7 @@ public class ContainerComputer
 extends Container {
     public ContainerComputer(IInventory par1IInventory, IInventory par2IInventory) {
         int i;
-        par2IInventory.openChest();
+        par2IInventory.openInventory();
         this.addSlotToContainer(new Slot(par2IInventory, 0, 119, 40));
         for (i = 0; i < 3; ++i) {
             for (int j = 0; j < 9; ++j) {

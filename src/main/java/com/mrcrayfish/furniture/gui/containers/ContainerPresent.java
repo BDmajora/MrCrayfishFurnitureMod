@@ -25,7 +25,7 @@ extends Container {
     public ContainerPresent(IInventory par1IInventory, IInventory par2IInventory) {
         int var4;
         this.present = par2IInventory;
-        par2IInventory.openChest();
+        par2IInventory.openInventory();
         int var3 = (this.numRows - 4) * 18;
         this.addSlotToContainer(new Slot(par2IInventory, 0, 71, 16));
         this.addSlotToContainer(new Slot(par2IInventory, 1, 89, 16));
@@ -46,7 +46,7 @@ extends Container {
     }
 
     public ItemStack slotClick(int par1, int par2, int par3, EntityPlayer par4EntityPlayer) {
-        this.present.closeChest();
+        this.present.closeInventory();
         return super.slotClick(par1, par2, par3, par4EntityPlayer);
     }
 
@@ -73,7 +73,7 @@ extends Container {
 
     public void onContainerClosed(EntityPlayer par1EntityPlayer) {
         super.onContainerClosed(par1EntityPlayer);
-        this.present.closeChest();
+        this.present.closeInventory();
     }
 }
 

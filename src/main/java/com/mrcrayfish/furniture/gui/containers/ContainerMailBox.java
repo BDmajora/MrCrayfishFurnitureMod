@@ -26,7 +26,7 @@ extends Container {
         int i;
         this.lowerChestInventory = par2IInventory;
         this.numRows = par2IInventory.getSizeInventory() / 9;
-        par2IInventory.openChest();
+        par2IInventory.openInventory();
         int var3 = (this.numRows - 4) * 18;
         int count = 0;
         for (i = 0; i < 2; ++i) {
@@ -69,7 +69,7 @@ extends Container {
 
     public void onContainerClosed(EntityPlayer par1EntityPlayer) {
         super.onContainerClosed(par1EntityPlayer);
-        this.lowerChestInventory.closeChest();
+        this.lowerChestInventory.closeInventory();
     }
 
     public IInventory getLowerChestInventory() {

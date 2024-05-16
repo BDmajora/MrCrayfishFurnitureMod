@@ -207,7 +207,7 @@ implements ISidedInventory {
             return 0;
         }
         Item i = par0ItemStack.getItem();
-        if (par0ItemStack.getMetadata() == 0) {
+        if (par0ItemStack.getItemDamage() == 0) {
             if (i == Items.dye) {
                 return 1000;
             }

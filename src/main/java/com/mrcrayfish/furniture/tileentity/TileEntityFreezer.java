@@ -195,7 +195,7 @@ implements ISidedInventory {
             }
             if (this.freezerItemStacks[2] == null) {
                 this.freezerItemStacks[2] = data.getOutput().copy();
-            } else if (this.freezerItemStacks[2].getItem() == data.getOutput().getItem() && this.freezerItemStacks[2].getMetadata() == data.getOutput().getMetadata()) {
+            } else if (this.freezerItemStacks[2].getItem() == data.getOutput().getItem() && this.freezerItemStacks[2].getItemDamage() == data.getOutput().getItemDamage()) {
                 this.freezerItemStacks[2].stackSize += data.getOutput().copy().stackSize;
             }
             if (this.freezerItemStacks[0].getItem().hasContainerItem()) {

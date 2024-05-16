@@ -49,7 +49,7 @@ extends TileEntity {
                 this.worldObj.playSoundEffect((double)this.xCoord, (double)this.yCoord, (double)this.zCoord, "cfm:knife_chop", 0.75f, 1.0f);
             }
             this.setFood(null);
-            knife.setMetadata(knife.getMetadata() + 1);
+            knife.setItemDamage(knife.getItemDamage() + 1);
         }
     }
 
@@ -78,7 +78,7 @@ extends TileEntity {
     }
 
     public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt) {
-        NBTTagCompound tagCom = pkt.getNbtCompound();
+        NBTTagCompound tagCom = pkt.func_148857_g();
         this.readFromNBT(tagCom);
     }
 

@@ -23,7 +23,7 @@ extends Container {
 
     public ContainerPackage(IInventory par1IInventory, IInventory par2IInventory) {
         int var4;
-        par2IInventory.openChest();
+        par2IInventory.openInventory();
         int var3 = (this.numRows - 4) * 18;
         this.addSlotToContainer(new SlotPackage(par2IInventory, 0, 62, 15));
         this.addSlotToContainer(new SlotPackage(par2IInventory, 1, 62, 33));

@@ -84,8 +84,8 @@ implements ISidedInventory {
         if (this.washing) {
             if (this.canRepair()) {
                 for (int i = 0; i < 4; ++i) {
-                    if (this.inventory[i] == null || this.inventory[i].getMaxDurability() - this.inventory[i].getMetadata() == this.inventory[i].getMaxDurability()) continue;
-                    this.inventory[i].setMetadata(this.inventory[i].getMetadata() - 1);
+                    if (this.inventory[i] == null || this.inventory[i].getMaxDamage() - this.inventory[i].getItemDamage() == this.inventory[i].getMaxDamage()) continue;
+                    this.inventory[i].setItemDamage(this.inventory[i].getItemDamage() - 1);
                 }
             }
             --this.timeRemaining;
@@ -211,7 +211,7 @@ implements ISidedInventory {
     }
 
     public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt) {
-        NBTTagCompound tagCom = pkt.getNbtCompound();
+        NBTTagCompound tagCom = pkt.func_148857_g();
         this.readFromNBT(tagCom);
     }
 

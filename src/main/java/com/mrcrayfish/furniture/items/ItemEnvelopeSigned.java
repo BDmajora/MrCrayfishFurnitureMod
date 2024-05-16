@@ -62,7 +62,7 @@ implements IMail {
         NBTTagCompound nbttagcompound;
         NBTTagString nbttagstring;
         if (par1ItemStack.hasTagCompound() && (nbttagstring = (NBTTagString)(nbttagcompound = par1ItemStack.getTagCompound()).getTag("Author")) != null) {
-            par3List.add(EnumChatFormatting.GRAY + "from " + nbttagstring.getString());
+            par3List.add(EnumChatFormatting.GRAY + "from " + nbttagstring.toString());
         }
     }
 

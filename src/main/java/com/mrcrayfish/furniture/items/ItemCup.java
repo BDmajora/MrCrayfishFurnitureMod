@@ -115,7 +115,7 @@ extends Item {
                         this.cupBlock.onBlockPlacedBy(world, x, y, z, (EntityLivingBase)player, cup);
                         this.cupBlock.onPostBlockPlaced(world, x, y, z, metadata);
                     }
-                    world.playSoundEffect((double)((float)x + 0.5f), (double)((float)y + 0.5f), (double)((float)z + 0.5f), this.cupBlock.stepSound.getPlaceSound(), (this.cupBlock.stepSound.getVolume() + 1.0f) / 2.0f, this.cupBlock.stepSound.getFrequency() * 0.8f);
+                    world.playSoundEffect((double)((float)x + 0.5f), (double)((float)y + 0.5f), (double)((float)z + 0.5f), this.cupBlock.stepSound.getBreakSound(), (this.cupBlock.stepSound.getVolume() + 1.0f) / 2.0f, this.cupBlock.stepSound.getPitch() * 0.8f);
                     --cup.stackSize;
                 }
             }
