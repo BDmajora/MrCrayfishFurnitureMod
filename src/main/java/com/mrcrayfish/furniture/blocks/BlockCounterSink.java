@@ -111,7 +111,7 @@ extends BlockContainer {
                         }
                         tileEntityCounterSink.empty();
                     }
-                } else if (currentItem.getItem() == Items.potionitem && currentItem.getMetadata() == 0) {
+                } else if (currentItem.getItem() == Items.potionitem && currentItem.getItemDamage() == 0) {
                     if (!tileEntityCounterSink.hasWater()) {
                         if (!par5EntityPlayer.capabilities.isCreativeMode) {
                             par5EntityPlayer.setCurrentItemOrArmor(0, new ItemStack(Items.glass_bottle));

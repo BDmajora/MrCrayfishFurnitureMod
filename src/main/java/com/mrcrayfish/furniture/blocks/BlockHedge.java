@@ -105,7 +105,7 @@ implements IShearable {
 
     @SideOnly(value=Side.CLIENT)
     public void randomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random) {
-        if (par1World.isRainingAt(par2, par3 + 1, par4)) {
+        if (par1World.isRaining()) {
             if (!World.doesBlockHaveSolidTopSurface((IBlockAccess)par1World, (int)par2, (int)(par3 - 1), (int)par4) && par5Random.nextInt(15) == 1) {
                 double d0 = (float)par2 + par5Random.nextFloat();
                 double d1 = (double)par3 - 0.05;

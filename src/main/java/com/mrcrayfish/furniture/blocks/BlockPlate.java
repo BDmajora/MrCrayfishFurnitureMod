@@ -95,7 +95,7 @@ extends BlockContainer {
                     var13 = var9.stackSize;
                 }
                 var9.stackSize -= var13;
-                EntityItem var14 = new EntityItem(par1World, (double)((float)par2 + var10), (double)((float)par3 + var11), (double)((float)par4 + var12), new ItemStack(var9.getItem(), var13, var9.getMetadata()));
+                EntityItem var14 = new EntityItem(par1World, (double)((float)par2 + var10), (double)((float)par3 + var11), (double)((float)par4 + var12), new ItemStack(var9.getItem(), var13, var9.getItemDamage()));
                 float var15 = 0.05f;
                 var14.motionX = (float)this.random.nextGaussian() * var15;
                 var14.motionY = (float)this.random.nextGaussian() * var15 + 0.2f;
@@ -115,7 +115,7 @@ extends BlockContainer {
         if (tileEntity instanceof TileEntityPlate) {
             TileEntityPlate tileEntityPlate = (TileEntityPlate)tileEntity;
             if (currentItem != null && tileEntityPlate.getFood() == null && currentItem.getItem() instanceof ItemFood) {
-                tileEntityPlate.setFood(new ItemStack(currentItem.getItem(), 1, currentItem.getMetadata()));
+                tileEntityPlate.setFood(new ItemStack(currentItem.getItem(), 1, currentItem.getItemDamage()));
                 tileEntityPlate.setRotation(MathHelper.floor_double((double)((double)(par5EntityPlayer.rotationYaw * 4.0f / 360.0f) + 0.5)) & 3);
                 par1World.markBlockForUpdate(par2, par3, par4);
                 --currentItem.stackSize;

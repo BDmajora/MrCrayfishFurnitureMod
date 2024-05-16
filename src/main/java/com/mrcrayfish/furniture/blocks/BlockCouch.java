@@ -79,7 +79,7 @@ implements ITileEntityProvider {
         if (tileEntity instanceof TileEntityCouch) {
             TileEntityCouch tileEntityCouch = (TileEntityCouch)tileEntity;
             if (currentItem != null && currentItem.getItem() instanceof ItemDye) {
-                tileEntityCouch.setColour(currentItem.getMetadata());
+                tileEntityCouch.setColour(currentItem.getItemDamage());
                 --currentItem.stackSize;
                 par1World.markBlockForUpdate(par2, par3, par4);
                 return true;

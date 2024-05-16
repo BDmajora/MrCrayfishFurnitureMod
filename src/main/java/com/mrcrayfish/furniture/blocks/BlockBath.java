@@ -135,7 +135,7 @@ extends BlockContainer {
                             tileEntityBath.removeWaterLevel();
                             tileEntityBath2.removeWaterLevel();
                         }
-                    } else if (currentItem.getItem() == Items.potionitem && currentItem.getMetadata() == 0) {
+                    } else if (currentItem.getItem() == Items.potionitem && currentItem.getItemDamage() == 0) {
                         if (!tileEntityBath.isFull()) {
                             tileEntityBath.addWaterLevel();
                             tileEntityBath2.addWaterLevel();
