@@ -1,7 +1,0 @@
-{
-    "parent": "cfm:block/kitchen_drawer_closed",
-    "textures": {
-        "top": "minecraft:block/birch_log",
-        "base": "minecraft:block/birch_planks"
-    }
-}

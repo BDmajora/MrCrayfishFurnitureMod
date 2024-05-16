@@ -1,12 +1,80 @@
-![Furniture Banner](https://i.imgur.com/L03Tgig.png)
+# Example Forge Mod for Minecraft 1.7.10
 
-[![Download](https://img.shields.io/static/v1?label=&message=Download&color=2d2d2d&labelColor=dddddd&style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEQAACxEBf2RfkQAAAAd0SU1FB98BHA41LJJkRpIAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMvvhp8YAAAGGSURBVDhPjZK9SgNBFIVHBEUE8QeMhLAzdzdYBFL7CmnstEjjO4iFjWClFiGJm42VFpYSUptKRfABFBQE7UUI2AmGmPXM5k6cjFE8cJjZ3fPduTOzIiJarvl+bPmuLuWS+K/KmcwUoK4pEGoTnetvYTY7GUpZOCTa0sZi+QRyhQ83pkBShKjDUBvzGKNxr6rU8W4uN8FoX4CKEcB6EMR61OZOEtApEqNIndFvAbiNuAB30QeU+sDYBXSCdw3MrzHvlnx/kdFkC3kU6NkwF3iM0ukFnNM8R0UplZquKHWE85nhV0Kg4o4GrDMwre5x5G9h9aaBHL/VPI849rtqRFfwqALaIcd+F87gYnDy1ha0sY12VcoiR0cLq5/ae3e3gyLbHB2tMAgKQ1fXh+z5a1mpDXQyy8hPIdgyAEMDW8+fWOQJHbfgzXUhxhkXYh/3jcC9C7s2V43c+9DPpHXgeXMIXbqQbV7gAV5hbFixEGMVolUEmvjjXuBeRcoOnp/R/hm81hi0LsQX8OcRBvBjZ8YAAAAASUVORK5CYII=)](https://mrcrayfish.com/mods?id=cfm) ![Minecraft](https://img.shields.io/static/v1?label=&message=1.15%20|%201.14%20|%201.12&color=2d2d2d&labelColor=dddddd&style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjCGJ1kDAAACoElEQVQ4T22SeU8aURTF/ULGtNRWWVQY9lXABWldIDPIMgVbNgEVtaa0damiqGBdipXaJcY2ofEf4ycbTt97pVAabzK5b27u+Z377kwXgK77QthRy7OfXbeJM+ttqKSXN8sdwbT/A0L7elmsYqrPHZmROLPh5YkV4oEBwaKuHj+yyJptLDoAhbq3O1V1XCVObY3FL24mfn5oRPrcwSCRfQOyNWcjVjZdCbtcdwcgXrXUspdOKbDN/XE9tiBJMhXHT60gUIT2dMhcDLMc3NVKQklz0QIkf5qlyEcO6Qs7yPhMJB4amDMFimQSmqNlE8SKAZFzDfxHfVILIIZ10sJ3OwIbcqSuiOjchkzNCboHev9o2YhgiUP8mxnLN24I6/3ghYdtQG5iUMpFBuCP9iKwLsfiLyeCp2rMnZgwX3NArGoxW1Ridl+BzLEVKa8KSxOqNmDdz0kFnxaLHhWEgAyZigWhHXL+pEDy2ozsDxv8vAzTnh7w5kcghqCaFmCT10of4iPIT2mRdPUh4HoCcVwBH/8Ac2kzUkEV5r3EfVSOvbAJa5NDyI0r2oDtWb1EClh+OoC3Pg7v/Bw7p939yI4rsRW2Y3lKh01eh7WpIRyKZqzyjjYgPdIvlaMWRqYuG7wWryYHsRM0sFolZiPvQ3jheIwSmSBPdkByG/B6Wi3RYiVmRX7GiAPiUCRisii8D+jZNKvPBrHCW1GY0bAz6WkDCtOaSyKQFsi4K5NqNiZtehN2Y5uAShETqolhBqJXpfdPuPsuWwAaRdHSkxdc11mPqkGnyY4pyKbpl1GyJ0Pel7yqBoFcF3zqno5f+d8ohYy9Sx7lzQpxo1eirluCDgt++00p6uxttrG4F/A39sJGZWZMfrcp6O6+5kaVzXJHAOj6DeSs8qw5o8oxAAAAAElFTkSuQmCC) ![Curseforge](http://cf.way2muchnoise.eu/full_mrcrayfish-furniture-mod_downloads.svg?badge_style=for_the_badge)
+[![](https://jitpack.io/v/SinTh0r4s/ExampleMod1.7.10.svg)](https://jitpack.io/#SinTh0r4s/ExampleMod1.7.10)
+[![](https://github.com/SinTh0r4s/ExampleMod1.7.10/actions/workflows/gradle.yml/badge.svg)](https://github.com/SinTh0r4s/ExampleMod1.7.10/actions/workflows/gradle.yml)
 
-# MrCrayfish's Furniture Mod
+An example mod for Minecraft 1.7.10 with Forge focussed on a stable, updatable setup.
 
-This mod adds in what Minecraft has been missing for years, furniture! It includes over 80 unique pieces of furniture to decorate your bedroom, kitchen, living room and even your garden! Turn your house into the dream house you have never been able to have until now.
+### Motivation
 
-### Features:
-* Includes over eighty unique pieces of furniture!
-* Working functionality in some blocks, not just a decoration.
-* A fully working mail system. Send items and blocks to players around your server!
+We had our fair share in struggles with build scripts for Minecraft Forge. There are quite a few pitfalls from non-obvious error messages. This Example Project provides you a build system you can adapt to over 90% of Minecraft Forge mods and can easily be updated if need be.
+
+### Help! I'm stuck!
+
+We all have been there! Check out our [FAQ](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/docs/FAQ.md). If that doesn't help, please open an issue.
+
+### Getting started
+
+Creating mod from scratch:
+1. Unzip [project starter](https://github.com/SinTh0r4s/ExampleMod1.7.10/releases/download/latest-packages/starter.zip) into project directory.
+2. Replace placeholders in LICENSE-template and rename it to LICENSE, or remove LICENSE-template and put any other license you like on your code. This is an permissive OSS project and we encourage you participate in OSS movement by having permissive license like one in template. You can find out pros and cons of OSS software in [this article](https://www.freecodecamp.org/news/what-is-great-about-developing-open-source-and-what-is-not/)
+3. Ensure your project is under VCS. For example initialise git repository by running `git init; git commit --message "initialized repository"`.
+4. Replace placeholders (edit values in gradle.properties, change example package and class names, etc.)
+5. Run `./gradlew setupDecompWorkspace` (if build fails with `Could not find :forgeBin:1.7.10-10.13.4.1614-1.7.10.` this should fix it)
+6. Make sure to check out the rest sections of this file.
+7. You are good to go!
+
+We also have described guidelines for existing mod [migration](docs/migration.md) and [porting](docs/porting.md)
+
+### Features
+
+ - Updatable: Replace [`build.gradle`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/build.gradle) with a newer version
+ - Optional API artifact (.jar)
+ - Optional version replacement in Java files
+ - Optional shadowing of dependencies
+ - Simplified setup of Mixin and example
+ - Scala support (add sources under `src/main/scala/` instead of `src/main/java/`)
+ - Optional named developer account for consistent player progression during testing
+ - Boilerplate forge mod as starting point
+ - Improved warnings for pitfalls
+ - Git Tags integration for versioning
+ - [Jitpack](https://jitpack.io) CI
+ - GitHub CI:
+   - Releasing your artifacts on new tags pushed. Push git tag named after version (e.g. 1.0.0) which will trigger a release of artifacts with according names.
+   - Running smoke test for server startup. On any server crash occurring workflow will fail and print the crash log.
+
+### Files
+ - [`build.gradle`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/build.gradle): This is the core script of the build process. You should not need to tamper with it, unless you are trying to accomplish something out of the ordinary. __Do not touch this file! You will make a future update near impossible if you do so!__
+ - [`gradle.properties`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/gradle.properties): The core configuration file. It includes 
+ - [`dependencies.gradle`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/dependencies.gradle): Add your mod's dependencies in this file. This is separate from the main build script, so you may replace the [`build.gradle`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/build.gradle) if an update is available.
+ - [`repositories.gradle`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/repositories.gradle): Add your dependencies' repositories. This is separate from the main build script, so you may replace the [`build.gradle`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/build.gradle) if an update is available.
+ - [`jitpack.yml`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/jitpack.yml): Ensures that your mod is available as import over [Jitpack](https://jitpack.io).
+ - [`.github/workflows/gradle.yml`](https://github.com/SinTh0r4s/ExampleMod1.7.10/blob/main/.github/workflows/gradle.yml): A simple CI script that will build your mod any time it is pushed to `master` or `main` and publish the result as release in your repository. This feature is free with GitHub if your repository is public.
+
+### Forge's Access Transformers
+
+You may activate Forge's Access Transformers by defining a configuration file in `gradle.properties`.
+
+Check out the [`example-access-transformers`](https://github.com/SinTh0r4s/ExampleMod1.7.10/tree/example-access-transformers) brach for a working example!
+
+__Warning:__ Access Transformers are bugged and will deny you any sources for the decompiled minecraft! Your development environment will still work, but you might face some inconveniences. For example, IntelliJ will not permit searches in dependencies without attached sources.
+
+### Mixins
+
+Mixins are usually used to modify vanilla or mod/library in runtime without having to change source code. For example, redirect a call, change visibility or make class implement your interface. It's an advanced topic and most mods don't need to do that.
+
+You can activate Mixin in 'gradle.properties'. In that case a mixin configuration (usually named `mixins.mymodid.json`) will be generated automatically, and you only have to write the mixins itself. Dependencies are handled as well.
+Take a look at the examples in [`com.myname.mymodid.mixinplugin.*`](https://github.com/SinTh0r4s/ExampleMod1.7.10/tree/example-mixins/src/main/java/com/myname/mymodid/mixinplugin) and [`com.myname.mymodid.mixins.*`](https://github.com/SinTh0r4s/ExampleMod1.7.10/tree/example-mixins/src/main/java/com/myname/mymodid/mixins). 
+
+Check out the [`example-mixins`](https://github.com/SinTh0r4s/ExampleMod1.7.10/tree/example-mixins) brach for a working example!
+
+### Advanced
+
+If your project requires custom gradle commands you may add a `addon.gradle` to your project. It will be added automatically to the build script. Although we recommend against it, it is sometimes required. When in doubt, feel free to ask us about it. You may break future updates of this build system!
+
+### Feedback wanted
+
+If you tried out this build script we would love to head your opinion! Is there any feature missing for you? Did something not work? Please open an issue and we will try to resolve it asap!
+
+Happy modding, \
+[SinTh0r4s](https://github.com/SinTh0r4s), [TheElan](https://github.com/TheElan) and [basdxz](https://github.com/basdxz)
