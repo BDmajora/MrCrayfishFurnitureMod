@@ -21,8 +21,7 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityBedsideCabinet
-extends TileEntity
-implements IInventory {
+extends TileEntity {
     private ItemStack[] bedsideCabinetContents = new ItemStack[10];
 
     public int getSizeInventory() {

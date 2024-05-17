@@ -90,5 +90,9 @@ extends Block {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.wool.getBlockTextureFromSide(1);
     }
+
+    public Block setUnlocalizedName(String lampon) {
+        return null;
+    }
 }
 

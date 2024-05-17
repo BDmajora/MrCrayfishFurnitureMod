@@ -30,8 +30,7 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityFreezer
-extends TileEntity
-implements ISidedInventory {
+extends TileEntity {
     private ItemStack[] freezerItemStacks = new ItemStack[3];
     public int freezerFreezeTime = 0;
     public int currentItemCoolTime = 0;

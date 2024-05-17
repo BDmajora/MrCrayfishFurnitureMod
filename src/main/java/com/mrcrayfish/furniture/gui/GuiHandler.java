@@ -76,34 +76,34 @@ implements IGuiHandler {
     public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
         TileEntity tile_entity = world.getTileEntity(x, y, z);
         if (tile_entity instanceof TileEntityFridge) {
-            return new ContainerFridge((IInventory)player.inventory, (TileEntityFridge)tile_entity);
+            return new ContainerFridge((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityFreezer) {
             return new ContainerFreezer(player.inventory, (TileEntityFreezer)tile_entity);
         }
         if (tile_entity instanceof TileEntityCabinet) {
-            return new ContainerCabinet((IInventory)player.inventory, (TileEntityCabinet)tile_entity);
+            return new ContainerCabinet((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityBedsideCabinet) {
-            return new ContainerBedsideCabinet((IInventory)player.inventory, (TileEntityBedsideCabinet)tile_entity);
+            return new ContainerBedsideCabinet((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityOven) {
             return new ContainerOven(player.inventory, (TileEntityOven)tile_entity);
         }
         if (tile_entity instanceof TileEntityMailBox) {
-            return new ContainerMailBox((IInventory)player.inventory, (TileEntityMailBox)tile_entity);
+            return new ContainerMailBox((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityComputer) {
-            return new ContainerComputer((IInventory)player.inventory, (TileEntityComputer)tile_entity);
+            return new ContainerComputer((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityPrinter) {
             return new ContainerPrinter(player.inventory, (TileEntityPrinter)tile_entity);
         }
         if (tile_entity instanceof TileEntityBin) {
-            return new ContainerBin((IInventory)player.inventory, (TileEntityBin)tile_entity);
+            return new ContainerBin((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityWallCabinet) {
-            return new ContainerWallCabinet((IInventory)player.inventory, (TileEntityWallCabinet)tile_entity);
+            return new ContainerWallCabinet((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityMicrowave) {
             return new ContainerMicrowave((IInventory)player.inventory, (TileEntityMicrowave)tile_entity);
@@ -115,7 +115,7 @@ implements IGuiHandler {
             return new ContainerDishwasher((IInventory)player.inventory, (TileEntityDishwasher)tile_entity);
         }
         if (tile_entity instanceof TileEntityCabinetKitchen) {
-            return new ContainerCabinet((IInventory)player.inventory, (TileEntityCabinetKitchen)tile_entity);
+            return new ContainerCabinet((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (id == 5) {
             return new ContainerEnvelope((IInventory)player.inventory, ItemEnvelope.getInv(player));
@@ -138,16 +138,16 @@ implements IGuiHandler {
     public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
         TileEntity tile_entity = world.getTileEntity(x, y, z);
         if (tile_entity instanceof TileEntityFridge) {
-            return new GuiFridge((IInventory)player.inventory, (TileEntityFridge)tile_entity);
+            return new GuiFridge((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityFreezer) {
             return new GuiFreezer(player.inventory, (TileEntityFreezer)tile_entity);
         }
         if (tile_entity instanceof TileEntityCabinet) {
-            return new GuiCabinet((IInventory)player.inventory, (TileEntityCabinet)tile_entity);
+            return new GuiCabinet((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityBedsideCabinet) {
-            return new GuiBedsideCabinet((IInventory)player.inventory, (TileEntityBedsideCabinet)tile_entity);
+            return new GuiBedsideCabinet((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityOven) {
             return new GuiOven(player.inventory, (TileEntityOven)tile_entity);
@@ -162,10 +162,10 @@ implements IGuiHandler {
             return new GuiPrinter(player.inventory, (TileEntityPrinter)tile_entity);
         }
         if (tile_entity instanceof TileEntityBin) {
-            return new GuiBin((IInventory)player.inventory, (TileEntityBin)tile_entity, x, y, z);
+            return new GuiBin((IInventory)player.inventory, (IInventory) tile_entity, x, y, z);
         }
         if (tile_entity instanceof TileEntityWallCabinet) {
-            return new GuiWallCabinet((IInventory)player.inventory, (TileEntityWallCabinet)tile_entity);
+            return new GuiWallCabinet((IInventory)player.inventory, (IInventory) tile_entity);
         }
         if (tile_entity instanceof TileEntityMicrowave) {
             return new GuiMicrowave(player.inventory, (TileEntityMicrowave)tile_entity);
@@ -177,7 +177,7 @@ implements IGuiHandler {
             return new GuiDishwasher(player.inventory, (TileEntityDishwasher)tile_entity);
         }
         if (tile_entity instanceof TileEntityCabinetKitchen) {
-            return new GuiKitchenCabinet((IInventory)player.inventory, (TileEntityCabinetKitchen)tile_entity);
+            return new GuiKitchenCabinet((IInventory)player.inventory, (IInventory) tile_entity);
         }
         ItemStack mail = null;
         if (player.getCurrentEquippedItem() != null) {

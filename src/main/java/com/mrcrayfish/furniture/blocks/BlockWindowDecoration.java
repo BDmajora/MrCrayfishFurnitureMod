@@ -158,5 +158,9 @@ extends Block {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.planks.getBlockTextureFromSide(1);
     }
+
+    public Block setUnlocalizedName(String blindon) {
+        return null;
+    }
 }
 

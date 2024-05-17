@@ -92,5 +92,9 @@ extends Block {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.hardened_clay.getBlockTextureFromSide(1);
     }
+
+    public Block setUnlocalizedName(String tree) {
+        return null;
+    }
 }
 

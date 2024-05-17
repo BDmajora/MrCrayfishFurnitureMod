@@ -21,8 +21,7 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityBin
-extends TileEntity
-implements IInventory {
+extends TileEntity {
     private ItemStack[] binContents = new ItemStack[12];
 
     public int getSizeInventory() {

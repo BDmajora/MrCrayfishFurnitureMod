@@ -28,8 +28,7 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityOven
-extends TileEntity
-implements ISidedInventory {
+extends TileEntity {
     private static final int[] field_102010_d = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8};
     private static final int[] field_102011_e = new int[]{9, 10, 11, 12, 13, 14, 15, 16, 17};
     private ItemStack[] ovenItemStacks = new ItemStack[18];

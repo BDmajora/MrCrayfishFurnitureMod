@@ -28,8 +28,7 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityMailBox
-extends TileEntity
-implements IInventory {
+extends TileEntity {
     public ItemStack[] mailBoxContents = new ItemStack[6];
     public UUID ownerUUID = null;
     public String ownerName = "";

@@ -31,8 +31,7 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityMicrowave
-extends TileEntity
-implements ISidedInventory {
+extends TileEntity {
     private ItemStack item = null;
     private boolean cooking = false;
     public int progress = 0;

@@ -23,6 +23,8 @@ import com.mrcrayfish.furniture.proxy.CommonProxy;
 import com.mrcrayfish.furniture.util.CollisionHelper;
 import java.util.List;
 import java.util.Random;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
@@ -111,6 +113,10 @@ extends BlockSittable {
         if (this == MrCrayfishFurnitureMod.chairStone) {
             this.blockIcon = Blocks.cobblestone.getBlockTextureFromSide(1);
         }
+    }
+
+    public Block setUnlocalizedName(String chairwood) {
+        return null;
     }
 }
 

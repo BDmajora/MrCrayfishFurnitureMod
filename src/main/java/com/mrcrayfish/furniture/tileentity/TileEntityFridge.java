@@ -22,7 +22,7 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityFridge
 extends TileEntity
-implements IInventory {
+ {
     private ItemStack[] fridgeContents = new ItemStack[16];
 
     public int getSizeInventory() {

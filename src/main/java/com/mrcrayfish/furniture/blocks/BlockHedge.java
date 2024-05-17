@@ -244,5 +244,9 @@ implements IShearable {
             }
         }
     }
+
+    public Block setUnlocalizedName(String hedge) {
+        return null;
+    }
 }
 

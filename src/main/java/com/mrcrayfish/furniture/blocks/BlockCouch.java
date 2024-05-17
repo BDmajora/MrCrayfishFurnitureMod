@@ -27,6 +27,8 @@ import com.mrcrayfish.furniture.util.CollisionHelper;
 import com.mrcrayfish.furniture.util.RenderHelper;
 import java.util.List;
 import java.util.Random;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -151,6 +153,10 @@ implements ITileEntityProvider {
 
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = par1IIconRegister.registerIcon("wool_colored_white");
+    }
+
+    public Block setUnlocalizedName(String couch) {
+        return null;
     }
 }
 

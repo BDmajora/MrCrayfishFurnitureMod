@@ -28,7 +28,7 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityPresent
 extends TileEntity
-implements IInventory {
+ {
     public ItemStack[] presentContents = new ItemStack[4];
     public String ownerName = "World";
     public boolean locked = true;

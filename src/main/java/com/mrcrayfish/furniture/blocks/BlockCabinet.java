@@ -128,5 +128,9 @@ extends BlockContainer {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.planks.getIcon(1, 2);
     }
+
+    public Block setUnlocalizedName(String cabinet) {
+        return null;
+    }
 }
 

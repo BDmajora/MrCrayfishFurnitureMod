@@ -106,5 +106,9 @@ extends Block {
             this.blockIcon = Blocks.cobblestone.getBlockTextureFromSide(1);
         }
     }
+
+    public Block setUnlocalizedName(String tablewood) {
+        return null;
+    }
 }
 

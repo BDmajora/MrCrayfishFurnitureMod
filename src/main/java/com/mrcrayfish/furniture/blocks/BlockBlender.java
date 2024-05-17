@@ -171,5 +171,9 @@ extends BlockContainer {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.stained_glass_pane.getBlockTextureFromSide(0);
     }
+
+    public Block setUnlocalizedName(String blender) {
+        return null;
+    }
 }
 

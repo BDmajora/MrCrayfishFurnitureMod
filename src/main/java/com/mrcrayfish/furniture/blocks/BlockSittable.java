@@ -44,7 +44,7 @@ extends Block {
     }
 
     public boolean checkForExistingEntity(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer) {
-        List listEMB = par1World.getEntitiesWithinAABB(EntitySittableBlock.class, AxisAlignedBB.getBoundingBox((double)par2, (double)par3, (double)par4, (double)((double)par2 + 1.0), (double)((double)par3 + 1.0), (double)((double)par4 + 1.0)).expand(1.0, 1.0, 1.0));
+        List<EntitySittableBlock> listEMB = par1World.getEntitiesWithinAABB(EntitySittableBlock.class, AxisAlignedBB.getBoundingBox((double)par2, (double)par3, (double)par4, (double)((double)par2 + 1.0), (double)((double)par3 + 1.0), (double)((double)par4 + 1.0)).expand(1.0, 1.0, 1.0));
         for (EntitySittableBlock mount : listEMB) {
             if (mount.blockPosX != par2 || mount.blockPosY != par3 || mount.blockPosZ != par4) continue;
             if (mount.riddenByEntity == null) {

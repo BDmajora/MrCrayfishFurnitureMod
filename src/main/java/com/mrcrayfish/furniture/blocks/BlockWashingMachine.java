@@ -127,5 +127,9 @@ extends BlockContainer {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.quartz_block.getBlockTextureFromSide(0);
     }
+
+    public Block setUnlocalizedName(String washingmachine) {
+        return null;
+    }
 }
 

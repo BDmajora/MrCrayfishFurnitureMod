@@ -160,5 +160,9 @@ extends Block {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.log.getBlockTextureFromSide(2);
     }
+
+    public Block setUnlocalizedName(String doorbell) {
+        return null;
+    }
 }
 

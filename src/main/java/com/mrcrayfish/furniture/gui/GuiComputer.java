@@ -50,7 +50,7 @@ extends GuiContainer {
     private RecipeData[] itemdata;
 
     public GuiComputer(InventoryPlayer inventoryplayer, TileEntityComputer tileEntityComputer) {
-        super((Container)new ContainerComputer((IInventory)inventoryplayer, tileEntityComputer));
+        super((Container)new ContainerComputer((IInventory)inventoryplayer, (IInventory) tileEntityComputer));
         this.tileEntityComputer = tileEntityComputer;
     }
 

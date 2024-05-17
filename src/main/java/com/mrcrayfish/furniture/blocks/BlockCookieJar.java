@@ -27,6 +27,8 @@ import com.mrcrayfish.furniture.tileentity.TileEntityCookieJar;
 import com.mrcrayfish.furniture.util.CollisionHelper;
 import java.util.List;
 import java.util.Random;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -129,6 +131,10 @@ extends BlockContainer {
 
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.stained_glass_pane.getBlockTextureFromSide(0);
+    }
+
+    public Block setUnlocalizedName(String cookiejar) {
+        return null;
     }
 }
 

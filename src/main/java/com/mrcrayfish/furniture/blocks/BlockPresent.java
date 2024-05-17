@@ -157,5 +157,9 @@ extends BlockContainer {
     public TileEntity createNewTileEntity(World var1, int var2) {
         return new TileEntityPresent();
     }
+
+    public Block setUnlocalizedName(String present) {
+        return null;
+    }
 }
 

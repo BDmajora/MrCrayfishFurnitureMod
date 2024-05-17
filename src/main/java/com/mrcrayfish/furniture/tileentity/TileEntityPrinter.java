@@ -31,8 +31,7 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityPrinter
-extends TileEntity
-implements ISidedInventory {
+extends TileEntity {
     private static final int[] slots_top = new int[]{0};
     private static final int[] slots_bottom = new int[]{2, 1};
     private static final int[] slots_sides = new int[]{1};

@@ -162,5 +162,9 @@ extends BlockContainer {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.planks.getIcon(0, 0);
     }
+
+    public Block setUnlocalizedName(String choppingboard) {
+        return null;
+    }
 }
 

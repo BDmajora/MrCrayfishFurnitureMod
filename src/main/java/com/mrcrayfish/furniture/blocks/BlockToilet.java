@@ -87,9 +87,12 @@ extends BlockSittable {
                 par5EntityPlayer.addChatComponentMessage((IChatComponent)new ChatComponentText("Press F for Farts."));
             }
         } else {
-            List items = par1World.getEntitiesWithinAABB(EntityItem.class, AxisAlignedBB.getBoundingBox((double)par2, (double)par3, (double)par4, (double)((double)par2 + 1.0), (double)((double)par3 + 1.0), (double)((double)par4 + 1.0)).expand(1.0, 1.0, 1.0));
-            for (EntityItem item : items) {
-                item.setDead();
+            List<Entity> entities = par1World.getEntitiesWithinAABB(Entity.class, AxisAlignedBB.getBoundingBox((double)par2, (double)par3, (double)par4, (double)((double)par2 + 1.0), (double)((double)par3 + 1.0), (double)((double)par4 + 1.0)).expand(1.0, 1.0, 1.0));
+            for (Entity entity : entities) {
+                if (entity instanceof EntityItem) {
+                    EntityItem item = (EntityItem) entity;
+                    item.setDead();
+                }
             }
             par1World.playSoundEffect((double)par2, (double)par3, (double)par4, "cfm:flush", 0.75f, 1.0f);
         }

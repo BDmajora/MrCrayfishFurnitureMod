@@ -25,7 +25,7 @@ extends GuiContainer {
     private static final ResourceLocation gui = new ResourceLocation("cfm:textures/gui/mailbox.png");
 
     public GuiMailBox(InventoryPlayer inventoryplayer, TileEntityMailBox tileEntityMailBox) {
-        super((Container)new ContainerMailBox((IInventory)inventoryplayer, tileEntityMailBox));
+        super((Container)new ContainerMailBox((IInventory)inventoryplayer, (IInventory) tileEntityMailBox));
     }
 
     protected void drawGuiContainerForegroundLayer(int par1, int par2) {

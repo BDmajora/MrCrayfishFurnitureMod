@@ -30,9 +30,7 @@ import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityWashingMachine
-extends TileEntity
-implements ISidedInventory {
+public class TileEntityWashingMachine extends TileEntity {
     private ItemStack[] inventory = new ItemStack[5];
     private boolean washing = false;
     public boolean superMode = false;

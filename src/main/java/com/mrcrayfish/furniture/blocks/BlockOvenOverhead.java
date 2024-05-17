@@ -107,5 +107,9 @@ extends Block {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.stone.getBlockTextureFromSide(1);
     }
+
+    public Block setUnlocalizedName(String ovenoverhead) {
+        return null;
+    }
 }
 

@@ -38,7 +38,7 @@ public class ParticleSpawner {
             if (particleName.equals("shower")) {
                 var21 = new EntityShowerFX((World)ParticleSpawner.mc.theWorld, par2, par4, par6);
             } else if (particleName.equals("smoke")) {
-                var21 = new EntitySpellParticleFX((World)ParticleSpawner.mc.theWorld, par2, par4, par6, 0.01, 1.0E-7, 0.01);
+                var21 = new EntityShowerFX((World)ParticleSpawner.mc.theWorld, par2, par4, par6);
             }
             ParticleSpawner.mc.effectRenderer.addEffect(var21);
             return var21;

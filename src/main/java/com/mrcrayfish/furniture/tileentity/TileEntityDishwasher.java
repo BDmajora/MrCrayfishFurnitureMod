@@ -31,8 +31,7 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityDishwasher
-extends TileEntity
-implements ISidedInventory {
+extends TileEntity {
     private ItemStack[] inventory = new ItemStack[7];
     private boolean washing = false;
     public boolean superMode = false;
@@ -84,8 +83,8 @@ implements ISidedInventory {
         if (this.washing) {
             if (this.canRepair()) {
                 for (int i = 0; i < 6; ++i) {
-                    if (this.inventory[i] == null || this.inventory[i].getMaxDurability() - this.inventory[i].getMetadata() == this.inventory[i].getMaxDurability()) continue;
-                    this.inventory[i].setMetadata(this.inventory[i].getMetadata() - 1);
+                    if (this.inventory[i] == null || this.inventory[i].getMaxDamage() - this.inventory[i].getItemDamage() == this.inventory[i].getMaxDamage()) continue;
+                    this.inventory[i].setItemDamage(this.inventory[i].getItemDamage() - 1);
                 }
             }
             --this.timeRemaining;

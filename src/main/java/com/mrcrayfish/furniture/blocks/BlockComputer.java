@@ -27,6 +27,8 @@ import com.mrcrayfish.furniture.proxy.ClientProxy;
 import com.mrcrayfish.furniture.proxy.CommonProxy;
 import com.mrcrayfish.furniture.tileentity.TileEntityComputer;
 import java.util.Random;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -112,6 +114,10 @@ extends BlockContainer {
 
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.iron_block.getBlockTextureFromSide(1);
+    }
+
+    public Block setUnlocalizedName(String bin) {
+        return null;
     }
 }
 

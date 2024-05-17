@@ -22,7 +22,7 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityCabinetKitchen
 extends TileEntity
-implements IInventory {
+ {
     private ItemStack[] cabinetContents = new ItemStack[15];
 
     public int getSizeInventory() {

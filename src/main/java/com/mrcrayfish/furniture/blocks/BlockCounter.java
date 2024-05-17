@@ -77,5 +77,9 @@ extends Block {
     public void registerIcons(IIconRegister par1IIconRegister) {
         this.blockIcon = Blocks.iron_block.getBlockTextureFromSide(0);
     }
+
+    public Block setUnlocalizedName(String counterdoored) {
+        return null;
+    }
 }
 

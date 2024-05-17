@@ -69,7 +69,7 @@ implements IMail {
                     NBTTagList itemList = (NBTTagList)NBTHelper.getCompoundTag(par1ItemStack, "Present").getTag("Items");
                     if (itemList.tagCount() > 0) {
                         par3World.setBlock(par4, par5 + 1, par6, MrCrayfishFurnitureMod.present, metadata, 2);
-                        par3World.playSoundEffect((double)((float)par4 + 0.5f), (double)((float)par5 + 0.5f), (double)((float)par6 + 0.5f), MrCrayfishFurnitureMod.present.stepSound.getPlaceSound(), (MrCrayfishFurnitureMod.present.stepSound.getVolume() + 1.0f) / 2.0f, MrCrayfishFurnitureMod.present.stepSound.getFrequency() * 0.8f);
+                        par3World.playSoundEffect((double)((float)par4 + 0.5f), (double)((float)par5 + 0.5f), (double)((float)par6 + 0.5f), MrCrayfishFurnitureMod.present.stepSound.getBreakSound(), (MrCrayfishFurnitureMod.present.stepSound.getVolume() + 1.0f) / 2.0f, MrCrayfishFurnitureMod.present.stepSound.getPitch() * 0.8f);
                         if (par3World.isRemote) {
                             PacketHandler.INSTANCE.sendToServer((IMessage)new MessagePresent(par1ItemStack, par4, par5 + 1, par6));
                         }
@@ -94,7 +94,7 @@ implements IMail {
                 NBTTagString nbttagstring = (NBTTagString)nbttagcompound.getTag("Author");
                 if (nbttagstring == null) {
                     par3EntityPlayer.openGui((Object)MrCrayfishFurnitureMod.instance, 9, par2World, 0, 0, 0);
-                } else if (nbttagstring.getString().equals("")) {
+                } else if (nbttagstring.toString().equals("")) {
                     par3EntityPlayer.addChatMessage((IChatComponent)new ChatComponentText("You cannot unwrap the present once signed"));
                 }
             } else {

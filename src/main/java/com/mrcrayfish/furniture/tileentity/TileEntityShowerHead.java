@@ -13,6 +13,7 @@
  */
 package com.mrcrayfish.furniture.tileentity;
 
+import com.mojang.authlib.GameProfile;
 import com.mrcrayfish.furniture.FurnitureAchievements;
 import com.mrcrayfish.furniture.util.ParticleSpawner;
 import java.util.List;
@@ -24,6 +25,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatBase;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.IChatComponent;
 
 public class TileEntityShowerHead
 extends TileEntity {
@@ -37,7 +40,26 @@ extends TileEntity {
             ParticleSpawner.spawnParticle("shower", posX, (double)this.yCoord + 0.065, posZ);
         }
         List listPlayers = this.worldObj.getEntitiesWithinAABB(EntityPlayer.class, AxisAlignedBB.getBoundingBox((double)this.xCoord, (double)(this.yCoord - 1), (double)this.zCoord, (double)((double)this.xCoord + 1.0), (double)((double)(this.yCoord - 1) + 1.0), (double)((double)this.zCoord + 1.0)));
-        for (EntityPlayer player : listPlayers) {
+        for (Object obj : listPlayers) {
+            if (!(obj instanceof EntityPlayer)) continue;
+            EntityPlayer oldPlayer = (EntityPlayer) obj;
+            GameProfile gameProfile = oldPlayer.getGameProfile(); // Assuming getGameProfile() method exists
+            EntityPlayer player = new EntityPlayer(this.worldObj, gameProfile) {
+                @Override
+                public void addChatMessage(IChatComponent p_145747_1_) {
+
+                }
+
+                @Override
+                public boolean canCommandSenderUseCommand(int p_70003_1_, String p_70003_2_) {
+                    return false;
+                }
+
+                @Override
+                public ChunkCoordinates getPlayerCoordinates() {
+                    return null;
+                }
+            };
             if (player == null) continue;
             player.curePotionEffects(new ItemStack(Items.milk_bucket));
             player.triggerAchievement((StatBase)FurnitureAchievements.allClean);
@@ -56,5 +78,6 @@ extends TileEntity {
         }
         ++this.timer;
     }
+
 }
 

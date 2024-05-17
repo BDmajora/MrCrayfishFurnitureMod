@@ -17,8 +17,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityComputer
-extends TileEntity
-implements IInventory {
+extends TileEntity {
     private ItemStack paySlot = null;
     public int stockNum = 0;
     private boolean isTrading = false;
